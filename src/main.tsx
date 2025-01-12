@@ -1,10 +1,21 @@
+// Supports weights 100-900
+import '@fontsource-variable/onest';
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import App from './App.tsx'
+import { RouterProvider } from 'react-router'
+import router from './router'
+import { ThemeProvider } from './components/theme-provider';
+import TopBarProgress from './components/TopBarProgress';
+import Particles from './components/Particles';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <App />
+    <TopBarProgress />
+    <Particles />
+
+    <ThemeProvider defaultTheme="system" storageKey="vite-ui-theme">
+      <RouterProvider router={router} />
+    </ThemeProvider>
   </StrictMode>,
 )
