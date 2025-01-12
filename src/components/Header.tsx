@@ -54,8 +54,13 @@ export default function Header() {
                 <LinkHeader href="#contacto" active={activeLink === "contacto"}>
                     Contacto
                 </LinkHeader>
-                <ModeToggle />
+                <div className="hidden sm:flex">
+                    <ModeToggle />
+                </div>
             </nav>
+            <div className="flex sm:hidden fixed bottom-4 right-4">
+                <ModeToggle />
+            </div>
         </header>
     )
 }
