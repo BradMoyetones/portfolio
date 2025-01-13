@@ -83,6 +83,7 @@ export const CameraTarget = React.forwardRef<
     const [cameraTarget] = React.useState(() => new utils.CameraTarget(camera));
 
     React.useLayoutEffect(() => {
+        // @ts-ignore
         cameraTarget.el = ref.current;
         if (typeof forwardedRef === "function") {
             forwardedRef(cameraTarget);
@@ -92,7 +93,9 @@ export const CameraTarget = React.forwardRef<
     }, []);
 
     return (
+        // @ts-ignore
         <div ref={ref} {...otherProps}>
+          {/* @ts-ignore */}
             {typeof children === "function" ? children(cameraTarget) : children}
         </div>
     );

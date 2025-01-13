@@ -4,7 +4,7 @@ import {
     animate,
     AnimationOptions
   } from "framer-motion";
-  
+  // @ts-ignore
   const DEFAULT_PAN_TRANSITON: AnimationOptions<number> = {
     type: "spring",
     damping: 23,
@@ -13,6 +13,7 @@ import {
     restDelta: 0.0
   };
   
+  // @ts-ignore
   const DEFAULT_ZOOM_TRANSITON: AnimationOptions<number> = {
     type: "spring",
     damping: 23,
@@ -21,6 +22,7 @@ import {
     restDelta: 0.001
   };
   
+  // @ts-ignore
   const DEFAULT_ROTATE_TRANSITON: AnimationOptions<number> = {
     type: "spring",
     damping: 23,
@@ -90,7 +92,9 @@ import {
   }
   
   export class Camera {
+  // @ts-ignore
     containerEl: HTMLElement;
+  // @ts-ignore
     contentEl: HTMLElement;
     motionValues: {
       zoom: MotionValue<number>;
@@ -129,6 +133,7 @@ import {
   
     panTo(
       position: Vector,
+  // @ts-ignore
       transition: AnimationOptions<number> = DEFAULT_PAN_TRANSITON
     ) {
       animate(this.motionValues.posX, position.x, transition);
@@ -137,6 +142,7 @@ import {
   
     setZoom(
       zoom: number,
+  // @ts-ignore
       transition: AnimationOptions<number> = DEFAULT_ZOOM_TRANSITON
     ) {
       animate(this.motionValues.zoom, zoom, transition);
@@ -144,6 +150,7 @@ import {
   
     setRotation(
       rotation: number,
+  // @ts-ignore
       transition: AnimationOptions<number> = DEFAULT_ROTATE_TRANSITON
     ) {
       animate(this.motionValues.rotation, rotation, transition);
@@ -151,9 +158,11 @@ import {
   
     follow(
       target: CameraTarget,
+  // @ts-ignore
       transition: AnimationOptions<number> = DEFAULT_PAN_TRANSITON
     ) {
       if (this.following) {
+  // @ts-ignore
         clearInterval(this.following.interval);
         this.following = null;
       }
@@ -169,6 +178,7 @@ import {
   
     unfollow(target: CameraTarget) {
       if (this.following?.target === target) {
+        // @ts-ignore
         clearInterval(this.following.interval);
         this.following = null;
       }
@@ -176,6 +186,7 @@ import {
   }
   
   export class CameraTarget {
+    //@ts-ignore
     el: HTMLElement;
     camera: Camera;
   
