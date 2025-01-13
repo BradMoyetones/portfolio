@@ -39,7 +39,7 @@ export default function Hero() {
                     </a>
                     <a href="https://www.linkedin.com/in/brad-salom%C3%B3n-moyetones-navas-726b9a1a8/" target="_blank" className={buttonVariants({variant:"outline"})+" !rounded-full"}>
                         <Linkedin />
-                        Contáctame
+                        LinkedIn
                     </a>
                 </div>
             </div>

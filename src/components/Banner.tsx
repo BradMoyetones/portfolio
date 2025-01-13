@@ -4,19 +4,19 @@ import { useClock } from "../hooks/hooks";
 import { Camera, CameraTarget, useCamera, utils } from "./camera";
 
 const bannerOneImages = [
-    "/site-2.png",
-    "/site-4.jpeg",
-    "/site-5.jpeg",
-    "/site-7.jpeg",
-    "/site-8.png",
+    "/banner/1.webp",
+    "/banner/2.webp",
+    "/banner/3.webp",
+    "/banner/4.webp",
+    "/banner/5.webp",
 ];
 
 const bannerTwoImages = [
-    "/site-10.jpeg",
-    "/site-11.jpeg",
-    "/site-13.jpeg",
-    "/site-14.jpeg",
-    "/site-15.jpeg",
+    "/banner/6.webp",
+    "/banner/7.webp",
+    "/banner/8.webp",
+    "/banner/9.webp",
+    "/banner/10.webp",
 ];
 
 interface PhotoProps {
@@ -110,7 +110,7 @@ const Banners = () => {
     );
 };
 
-const App = () => {
+const Banner = () => {
     return (
         <Camera>
             <div className="scale-125 h-screen flex items-center">
@@ -120,4 +120,4 @@ const App = () => {
     );
 };
 
-export default App;
+export default Banner;

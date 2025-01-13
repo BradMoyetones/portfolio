@@ -48,10 +48,10 @@ export default function Header() {
                 <LinkHeader href="#proyectos" active={activeLink === "proyectos"}>
                     Proyectos
                 </LinkHeader>
-                <LinkHeader href="#sobre-mi" active={activeLink === "sobre-mí"}>
+                <LinkHeader href="#sobre-mi" active={activeLink === "sobre-mi"}>
                     Sobre mí
                 </LinkHeader>
-                <LinkHeader href="#contacto" active={activeLink === "contacto"}>
+                <LinkHeader href="mailto:brad.moyetones@gmail.com" active={activeLink === "contacto"}>
                     Contacto
                 </LinkHeader>
                 <div className="hidden sm:flex">

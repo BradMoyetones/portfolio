@@ -65,6 +65,10 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Onest Variable', sans-serif;
 }
