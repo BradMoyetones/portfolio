@@ -111,8 +111,8 @@ const resources = {
             },
             footer: {
                 copy: "© 2025 Brad. Casi todos los derechos reservados",
-                aboutMe: "About me",
-                contact: "Contact",
+                aboutMe: "Sobre mí",
+                contact: "Contáctame",
             },
             hero: {
                 title: [
@@ -122,7 +122,7 @@ const resources = {
                 badge: "Disponible para trabajar",
                 paragraph: "+2 años de experiencia. <strong>Ingeniero de sistemas y próximamente creador de contenido</strong> de Colombia. Especializado en el desarrollo de aplicaciones web únicas.",
                 links: [
-                    "Contactame",
+                    "Contáctame",
                     "LinkedIn",
                 ]
             },
