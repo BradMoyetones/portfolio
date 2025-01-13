@@ -1,50 +1,45 @@
-# React + TypeScript + Vite
+# 👨🏻‍💻 Porfolio para programadores y desarrolladores
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<div align="center">
+<a href="https://porfolio.dev/">
+<img src="./public/portfolio.webp">
+</a>
+<p></p>
+</div>
 
-Currently, two official plugins are available:
+<div align="center">
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![React Badge](https://shields.io/badge/react-black?logo=react&style=for-the-badge)
+![Vite Badge](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=Vite&logoColor=white)
+![Tailwind CSS Badge](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?logo=tailwindcss&logoColor=fff&style=flat)
+![GitHub stars](https://img.shields.io/github/stars/BradMoyetones/portfolio)
+![GitHub issues](https://img.shields.io/github/issues/BradMoyetones/portfolio)
 
-## Expanding the ESLint configuration
+</div>
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## 🚀 Instrucciones para ejecutar el proyecto
 
-- Configure the top-level `parserOptions` property like this:
+Para ejecutar este proyecto en tu máquina local, sigue los siguientes pasos:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+1. **Clona el repositorio:**
+```bash
+git clone https://github.com/BradMoyetones/portfolio.git
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+2. **Instala las dependencias:**
+Navega a la carpeta del proyecto y ejecuta:
+```bash
+npm install
 ```
+
+3. **Ejecuta el proyecto:**
+Para iniciar el servidor de desarrollo, ejecuta:
+```bash
+npm run dev
+```
+
+4. **Abre tu navegador:**
+Una vez que el servidor esté en ejecución, abre tu navegador y ve a `http://localhost:5173` para ver el proyecto en acción.
+
+<p></p>

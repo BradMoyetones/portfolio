@@ -21,7 +21,7 @@ export default function Hero() {
                                     .typeString('Hey, soy <span class="text-orange-500">Brad</span>')
                                     .pauseFor(1200)
                                     .deleteAll()
-                                    .typeString('<span class="hidden sm:flex">Soy</span> <span class="text-orange-500">Desarrollador Web</span>')
+                                    .typeString('<span class="text-orange-500">Desarrollador Web</span>')
                                     .pauseFor(1000)
                                     .start();
                             }}
