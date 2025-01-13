@@ -7,11 +7,11 @@
 <p></p>
 </div>
 
-<div align="center">
+<div align="center" style="display: flex; align-items: center;">
 
 ![React Badge](https://shields.io/badge/react-black?logo=react&style=for-the-badge)
 ![Vite Badge](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=Vite&logoColor=white)
-![Tailwind CSS Badge](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?logo=tailwindcss&logoColor=fff&style=flat)
+![Tailwind CSS Badge](https://img.shields.io/badge/tailwindcss-0F172A?&logo=tailwindcss)
 ![GitHub stars](https://img.shields.io/github/stars/BradMoyetones/portfolio)
 ![GitHub issues](https://img.shields.io/github/issues/BradMoyetones/portfolio)
 
