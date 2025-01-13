@@ -64,10 +64,10 @@ export default function Header() {
                     <ModeToggle />
                 </div>
             </nav>
-            <div className="flex sm:hidden fixed bottom-16 right-4 scale-150 bg-black dark:bg-white bg-opacity-15 backdrop-filter backdrop-blur-lg p-1 rounded-lg">
+            <div className="flex sm:hidden fixed bottom-16 right-4 scale-150 bg-black bg-opacity-15 backdrop-filter backdrop-blur-lg dark:bg-white dark:bg-opacity-15 dark:backdrop-filter dark:backdrop-blur-lg p-1 rounded-lg">
                 <ModeLang />
             </div>
-            <div className="flex sm:hidden fixed bottom-4 right-4 scale-150 bg-black dark:bg-white bg-opacity-15 backdrop-filter backdrop-blur-lg p-1 rounded-lg">
+            <div className="flex sm:hidden fixed bottom-4 right-4 scale-150 bg-black bg-opacity-15 backdrop-filter backdrop-blur-lg dark:bg-white dark:bg-opacity-15 dark:backdrop-filter dark:backdrop-blur-lg p-1 rounded-lg">
                 <ModeToggle />
             </div>
         </header>
