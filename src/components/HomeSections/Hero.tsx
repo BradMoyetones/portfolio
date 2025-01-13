@@ -19,10 +19,10 @@ export default function Hero() {
                             onInit={(typewriter) => {
                                 typewriter
                                     .typeString('Hey, soy <span class="text-orange-500">Brad</span>')
-                                    .pauseFor(800)
+                                    .pauseFor(1200)
                                     .deleteAll()
-                                    .typeString('Soy <span class="text-orange-500">Desarrollador Web</span>')
-                                    .pauseFor(800)
+                                    .typeString('<span class="hidden sm:flex">Soy</span> <span class="text-orange-500">Desarrollador Web</span>')
+                                    .pauseFor(1000)
                                     .start();
                             }}
                             options={{
