@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next"
 import LinkInline from "./LinkInline"
 
 interface Props {
@@ -10,6 +11,7 @@ interface Props {
 
 export default function TimeLineItem(props: Props) {
     const { title, company, description, link, date } = props
+    const { t } = useTranslation();
 
     return (
         <div
@@ -29,7 +31,7 @@ export default function TimeLineItem(props: Props) {
                 {description}
                 {link && (
                     <LinkInline href={link}>
-                        Saber más{" "}
+                        {t("experience.learnMore")}{" "}
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             className="w-5 icon icon-tabler icon-tabler-chevron-right"

@@ -7,28 +7,31 @@ import Projects from "@/components/HomeSections/Projects";
 import SectionContainer from "@/components/SectionContainer";
 import TitleSection from "@/components/TitleSection";
 import { BriefcaseBusiness, CodeIcon, UserCheck } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 export default function Home() {
+    const { t } = useTranslation();
+    
     return (
         <div className="px-4">
             <Hero />
             <SectionContainer id="experiencia">
                 <TitleSection>
-                    <BriefcaseBusiness /> Experiencia laboral
+                    <BriefcaseBusiness /> {t("experience.title")}
                 </TitleSection>
                 <Experience />
             </SectionContainer>
             <SectionContainer id="proyectos">
                 <TitleSection>
                     <CodeIcon className="size-8" />
-                    Proyectos
+                    {t("projects.title")}
                 </TitleSection>
                 <Projects />
             </SectionContainer>
             <SectionContainer id="sobre-mi">
                 <TitleSection>
                     <UserCheck className="size-8" />
-                    Sobre Mí
+                    {t("aboutMe.title")}
                 </TitleSection>
                 <AboutMe />
                 <Banner />

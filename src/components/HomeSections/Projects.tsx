@@ -1,16 +1,16 @@
 import GitHub from '@/icons/GitHub'
-import Tailwind from '@/icons/Tailwind'
-import NextJS from '@/icons/NextJS'
 import Link from "@/icons/Link"
 import LinkButton from '../LinkButton'
-import HTML5 from '@/icons/Html5'
-import CSS from '@/icons/CSS'
-import Strapi from '@/icons/Starpi'
-import Stripe from '@/icons/Stripe'
-import Cloudinary from '@/icons/Cloudinary'
+import { useTranslation } from 'react-i18next';
+import NextJS from '@/icons/NextJS';
+import Tailwind from '@/icons/Tailwind';
+import HTML5 from '@/icons/Html5';
+import CSS from '@/icons/CSS';
+import Strapi from '@/icons/Strapi';
+import Stripe from '@/icons/Stripe';
+import Cloudinary from '@/icons/Cloudinary';
 
 // Use https://shots.so/ for generate your picture projects
-
 const TAGS = {
     NEXT: {
         name: "Next.js",
@@ -49,32 +49,16 @@ const TAGS = {
     }
 }
 
-const PROJECTS = [
-    {
-        title: "Ecommerce OpenSource - A powerful platform for online stores",
-        description:
-            "Un proyecto diseñado para pequeñas y medianas empresas que deseen iniciar en el comercio electrónico sin incurrir en altos costos iniciales.",
-        link: "https://braddev-ecommerce.vercel.app/",
-        github: "https://github.com/BradMoyetones/braddev-ecommerce",
-        image: "/projects/ecommerce.webp",
-        tags: [TAGS.NEXT, TAGS.TAILWIND, TAGS.STRAPI, TAGS.STRIPE, TAGS.CLOUDINARY],
-    },
-    {
-        title: "RUMBO - My First Website as a Web Developer",
-        description:
-            "Mi primer sitio web creado como ejemplo cuando inicié mi camino como desarrollador web. Un proyecto simple pero significativo, que marcó el inicio de mi aprendizaje y pasión por el desarrollo.",
-        link: "https://rumbo-brad.netlify.app/",
-        image: "/projects/first-page.webp",
-        tags: [TAGS.HTML5, TAGS.CSS],
-    },
-]
-
 export default function Projects() {
+    const { t } = useTranslation();
+    const projects = t("projects.data", { returnObjects: true });  // Load array experiences
+    const projectsList = Array.isArray(projects) ? projects : [];
+
     return (
         <div className="flex flex-col gap-y-16">
             {
-                PROJECTS.map(({ image, title, description, tags, link, github }) => (
-                    <article className="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0">
+                projectsList.map(({ image, title, description, tags, link, github }, index) => (
+                    <article key={index+"-projects"} className="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0">
                         <div className="w-full md:w-1/2">
                             <div className="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
                                 <img alt="Recién llegado vs 5 años en Nueva Zelanda" className="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105" loading="lazy" src={image} />
@@ -87,16 +71,21 @@ export default function Projects() {
                             </h3>
                             <div className="flex flex-wrap mt-2">
                                 <ul className="flex flex-row flex-wrap mb-2 gap-2">
-                                    {tags.map((tag) => (
-                                        <li>
-                                        <span
-                                            className={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2 `}
-                                        >
-                                            <tag.icon className="size-4" />
-                                            {tag.name}
-                                        </span>
-                                        </li>
-                                    ))}
+                                    {tags.map((tagKey, index) => {
+                                        // Accedemos al objeto tag usando la clave (tagKey)
+                                        const tag = TAGS[tagKey];
+                                        return (
+                                            <li key={index + "-tag"}>
+                                                <span
+                                                    className={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2`}
+                                                >
+                                                    {/* Renderizamos el icono y el nombre del tag */}
+                                                    <tag.icon className="w-4 h-4" />
+                                                    {tag.name}
+                                                </span>
+                                            </li>
+                                        );
+                                    })}
                                 </ul>
 
                                 <div className="mt-2 text-gray-700 dark:text-gray-400">{description}</div>
