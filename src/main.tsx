@@ -9,6 +9,7 @@ import { ThemeProvider } from './components/theme-provider';
 import TopBarProgress from './components/TopBarProgress';
 import Particles from './components/Particles';
 import { SpeedInsights } from "@vercel/speed-insights/react"
+import { Analytics } from "@vercel/analytics/react"
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -18,5 +19,6 @@ createRoot(document.getElementById('root')!).render(
       <RouterProvider router={router} />
     </ThemeProvider>
     <SpeedInsights/>
+    <Analytics/>
   </StrictMode>,
 )
