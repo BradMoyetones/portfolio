@@ -18,7 +18,7 @@ export default function Hero() {
         <section id="hero" className="py-16 md:py-34">
             <div className="max-w-xl">
                 <div className="flex items-center gap-4 mb-4">
-                    <img className="size-16 rounded-full overflow-hidden" src="/IMG_4020-compress.webp" alt="Brad Foto" />
+                    <img className="size-16 rounded-full overflow-hidden" src="/portrait.webp" alt="Brad Foto" />
                     <Badge>
                         {t("hero.badge")}
                     </Badge>
