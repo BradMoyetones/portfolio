@@ -46,7 +46,7 @@ const resources = {
                         title: "Full Stack Web Developer",
                         company: "Parque Jaime Duque",
                         description: "Leader in programming and web development across multiple platforms. Committed to innovation and implementing effective solutions for various areas of the company. Expert in backup management and ensuring data protection across platforms.",
-                        link: "https://www.twitch.tv/bradfieldn",
+                        link: "https://www.instagram.com/its.bradn/",
                     },
                 ]
             },
@@ -69,7 +69,15 @@ const resources = {
                         link: "https://rumbo-brad.netlify.app/",
                         image: "/projects/first-page.webp",
                         tags: ["HTML5", "CSS"],
-                    }
+                    },
+                    {
+                        title: "BradTunes - Download Creative Commons media content by inserting a URL",
+                        description:
+                            "A platform to download music and videos licensed under Creative Commons using just a URL. Supports multiple formats and features a simple, intuitive interface.",
+                        github: "https://github.com/BradMoyetones/BradTunes",
+                        image: "/projects/bradtunes.webp",
+                        tags: ["REACT", "TYPESCRIPT", "ELECTRON", "TAILWIND"],
+                    }                    
                 ]
             },
             aboutMe: {
@@ -136,7 +144,7 @@ const resources = {
                         company: "Parque Jaime Duque",
                         description:
                             "Líder en programación y desarrollo web en múltiples plataformas. Comprometido con la innovación y la implementación de soluciones efectivas para diversas áreas de la empresa. Experto en la realización de copias de seguridad y en garantizar la protección de la información gestionada en las distintas plataformas.",
-                        link: "https://www.twitch.tv/bradfieldn",
+                        link: "https://www.instagram.com/its.bradn/",
                     },
                 ]
             },
@@ -159,6 +167,14 @@ const resources = {
                         link: "https://rumbo-brad.netlify.app/",
                         image: "/projects/first-page.webp",
                         tags: ["HTML5", "CSS"],
+                    },
+                    {
+                        title: "BradTunes - Descarga contenido multimedia Creative Common con insertar una url",
+                        description:
+                            "Plataforma para descargar música y videos con licencia Creative Commons a partir de una URL. Compatible con múltiples formatos y diseñada con una interfaz sencilla e intuitiva.",
+                        github: "https://github.com/BradMoyetones/BradTunes",
+                        image: "/projects/bradtunes.webp",
+                        tags: ["REACT", "TYPESCRIPT", "ELECTRON", "TAILWIND"],
                     },
                 ]
             },

@@ -9,6 +9,9 @@ import CSS from '@/icons/CSS';
 import Strapi from '@/icons/Strapi';
 import Stripe from '@/icons/Stripe';
 import Cloudinary from '@/icons/Cloudinary';
+import TypeScript from '@/icons/TypeScript';
+import Electron from '@/icons/Electron';
+import React from '@/icons/React';
 
 // Use https://shots.so/ for generate your picture projects
 const TAGS = {
@@ -44,9 +47,24 @@ const TAGS = {
     },
     CLOUDINARY: {
         name: "Cloudinary",
-        class: "bg-white text-black",
+        class: "bg-zinc-200 dark:bg-white text-black",
         icon: Cloudinary
-    }
+    },
+    TYPESCRIPT: {
+        name: "TypeScript",
+        class: "bg-zinc-200 dark:bg-white text-black",
+        icon: TypeScript
+    },
+    ELECTRON: {
+        name: "Electron",
+        class: "bg-cyan-300 text-black",
+        icon: Electron
+    },
+    REACT: {
+        name: "React",
+        class: "bg-zinc-100 dark:bg-zinc-700 text-black dark:text-white",
+        icon: React
+    },
 }
 
 export default function Projects() {

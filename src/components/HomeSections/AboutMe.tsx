@@ -12,7 +12,7 @@ export default function AboutMe() {
                 
             </div>
 
-            <img width="200" height="200" src="/me.webp" alt="Brad Moyetones" className="order-1 object-cover w-64 h-full p-1 md:order-2 rotate-3 lg:p-2 lg:w-64 aspect-square rounded-2xl bg-black/20 dark:bg-yellow-500/5 ring-1 ring-black/70 dark:ring-white/20 " style={{objectPosition: "50% 50%"}} />
+            <img width="200" height="200" src="/me.webp" alt="Brad Moyetones" className="order-1 object-cover w-64 h-full p-1 md:order-2 rotate-3 lg:p-2 lg:w-64 aspect-square rounded-2xl bg-black/5 dark:bg-orange-500/5 ring-1 ring-black/30 dark:ring-white/20 " style={{objectPosition: "50% 50%"}} />
         </article>
     )
 }
